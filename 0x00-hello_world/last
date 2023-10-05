@@ -1,6 +1,0 @@
-#!/bin/bash
-
-# Get the name of the last file created in the current directory
-last_file=$(ls -lt | grep "^-" | head -n 1 | awk '{print $9}')
-
-echo "Last file created: $last_file"
