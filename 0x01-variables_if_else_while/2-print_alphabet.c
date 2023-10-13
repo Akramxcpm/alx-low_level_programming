@@ -1,9 +1,11 @@
 #include <stdio.h>
 
 /**
- * main - Prints the alphabet.
+ * main - Entry point of the program
  *
- * Return: Always 0 (Success)
+ * Description: This function prints the lowercase and uppercase alphabets
+ * followed by a new line.
+ * Return: 0 (Success)
  */
 int main(void)
 {
