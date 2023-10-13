@@ -14,6 +14,7 @@ int main(void)
 		putchar(min);
 		min++;
 	}
+	putchar('\n');
 	return (0);
 }
 
