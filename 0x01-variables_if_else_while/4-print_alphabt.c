@@ -9,28 +9,20 @@
  */
 int main(void)
 {
-	char min ='a';
-	
-	while( min <= 'z' )
-		{
-			
-			
-			if( min == 'q' || min == 'e' )
-			{
-				min++;
-			} else 
-			{
-				putchar(min);
-				min++;
-			
-			}
-		
-		
-		}
-
-
-	
-	putchar('\n');
-	return (0);
+char min = 'a';
+while (min <= 'z')
+{
+if (min == 'q' || min == 'e')
+{
+min++;
+}
+else
+{
+putchar(min);
+min++;
+}
+}
+putchar('\n');
+return (0);
 }
 
