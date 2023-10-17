@@ -8,7 +8,7 @@ int main(void)
 {
 	char min = 'a';
 
-	while (min <='z')
+	while (min <= 'z')
 	{
 		putchar(min);
 		min++;
