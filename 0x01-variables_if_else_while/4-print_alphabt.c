@@ -3,21 +3,33 @@
 #include <string.h>
 
 /**
- * main - Prints the alphabet without q and e.
+ * main - Print all the alphabet except q and e.
  *
  * Return: Always 0 (Success)
  */
 int main(void)
 {
-	int i;
-
-	for (i = 97; i < 123; i++)
-	{
-		if (i != 101 && i != 113)
+	char min ='a';
+	
+	while( min <= 'z' )
 		{
-			putchar(i);
+			
+			
+			if( min == 'q' || min == 'e' )
+			{
+				min++;
+			} else 
+			{
+				putchar(min);
+				min++;
+			
+			}
+		
+		
 		}
-	}
+
+
+	
 	putchar('\n');
 	return (0);
 }
