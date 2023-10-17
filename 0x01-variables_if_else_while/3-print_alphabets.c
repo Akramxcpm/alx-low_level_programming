@@ -8,12 +8,15 @@
 int main(void){
 
 char min ='a';
-
-while(min <= 'z')
+char maj ;
+while(min <= 'z' )
 {
 	putchar(min);
 	min++;
 }
-
+for (maj='A';maj <='Z';maj++){
+putchar(maj);
+}
+putchar('\n');
 return 0;
 }
