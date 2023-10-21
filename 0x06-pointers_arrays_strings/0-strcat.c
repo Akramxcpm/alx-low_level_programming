@@ -1,25 +1,31 @@
+
 #include "main.h"
 /**
- * leet - encode into 1337speak
- * @n: input value
- * Return: n value
+ * _strcat - concatenates two strings
+ * @dest: input value
+ * @src: input value
+ *
+ * Return: void
  */
-char *leet(char *n)
+char *_strcat(char *dest, char *src)
 {
-	int i, j;
-	char s1[] = "aAeEoOtTlL";
-	char s2[] = "4433007711";
+	int i;
+	int j;
 
-	for (i = 0; n[i] != '\0'; i++)
+	i = 0;
+	while (dest[i] != '\0')
 	{
-		for (j = 0; j < 10; j++)
-		{
-			if (n[i] == s1[j])
-			{
-				n[i] = s2[j];
-			}
-		}
+		i++;
 	}
-	return (n);
+	j = 0;
+	while (src[j] != '\0')
+	{
+		dest[i] = src[j];
+		i++;
+		j++;
+	}
+
+	dest[i] = '\0';
+	return (dest);
 }
 
